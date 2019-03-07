@@ -10,5 +10,5 @@ Database editor using HandsOnTable. Can also edit arrays, which will be joined u
 
 ## Screenshots
 
-![](/screenshots/1.png)
-![](/screenshots/2.png)
+![](https://raw.githubusercontent.com/patarapolw/db-editor/master/screenshots/1.png)
+![](https://raw.githubusercontent.com/patarapolw/db-editor/master/screenshots/2.png)

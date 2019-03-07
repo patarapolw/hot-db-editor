@@ -229,7 +229,7 @@ function readSearchBarValue() {
             throw new Error("YAML error");
         }
     } catch (e) {
-        fetchCurrentPage();
+        // fetchCurrentPage();
     }
 }
 

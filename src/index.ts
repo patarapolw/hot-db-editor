@@ -137,7 +137,7 @@ function loadData(data: any[]) {
             }
         });
     });
-    dataArray.push([]);
+    // dataArray.push([]);
     hot = new Handsontable(el.hotArea, {
         colHeaders,
         // minSpareRows: 1,
@@ -229,7 +229,7 @@ function readSearchBarValue() {
             throw new Error("YAML error");
         }
     } catch (e) {
-        // fetchCurrentPage();
+        fetchCurrentPage();
     }
 }
 

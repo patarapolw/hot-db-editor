@@ -1,6 +1,6 @@
 # db-editor
 
-Database editor using HandsOnTable. Can also edit arrays (but not Objects, which will be joined using `"\n"`).
+Database editor using HandsOnTable. Can also edit arrays, which will be joined using `"\n"` (but not Objects).
 
 ## Usage
 

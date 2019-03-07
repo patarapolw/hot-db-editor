@@ -137,12 +137,12 @@ function loadData(data: any[]) {
             }
         });
     });
-    dataArray.push([]);
+    // dataArray.push([]);
     hot = new Handsontable(el.hotArea, {
         colHeaders,
-        minSpareRows: 1,
+        // minSpareRows: 1,
         minCols: colHeaders.length,
-        minRows: 1,
+        // minRows: 1,
         colWidths: settingsJson.colWidths,
         manualColumnResize: true,
         renderer: wrappingRenderer,
@@ -180,7 +180,7 @@ function loadData(data: any[]) {
                                 // alert("Not modified");
                                 hot!.setDataAtCell(c[0], fieldName, c[2]);
                             } else {
-                                hot!.setDataAtCell(c[0], colIdIndex, r);
+                                // hot!.setDataAtCell(c[0], colIdIndex, r);
                             }
                         })
                         .catch((e) => {
@@ -229,7 +229,7 @@ function readSearchBarValue() {
             throw new Error("YAML error");
         }
     } catch (e) {
-        // fetchCurrentPage();
+        fetchCurrentPage();
     }
 }
 

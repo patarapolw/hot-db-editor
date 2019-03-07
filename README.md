@@ -6,6 +6,7 @@ Database editor using HandsOnTable. Can also edit arrays (but not Objects, which
 
 - Settings are in `./src/settings.json` and `./webpack.dev.js`'s proxy settings
 - Point the API endpoint to `/api/editor/` on `POST`, `PUT` and `DELETE` methods; and enable CORS on the endpoint.
+- Clone the repo, edit the settings, `yarn install` and `yarn start`.
 
 ## Screenshots
 

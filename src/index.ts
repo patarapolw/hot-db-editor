@@ -55,8 +55,22 @@ document.body.addEventListener("keydown", (e) => {
 });
 
 el.searchBar.addEventListener("keyup", () => {
-    page.current = 1;
-    readSearchBarValue();
+    const s = el.searchBar.value;
+
+    try {
+        const cond = yaml.safeLoad(s);
+        if (typeof cond === "object") {
+            page.current = 1;
+            fetchCurrentPage(cond);
+        } else {
+            throw new Error("YAML error");
+        }
+    } catch (e) {
+        if (s === "") {
+            page.current = 1;
+            fetchCurrentPage();
+        }
+    }
 });
 
 $(".page-button").prop("disabled", true);

@@ -1,5 +1,5 @@
 {
     "colHeaders": ["_id", "entry", "front", "back", "mnemonic", "tags", "srsLevel", "nextReview"],
-    "colWidths": [200, 100, 300, 300, 300, 150, 150, 150],
+    "colWidths": [200, 100, 300, 300, 300, 150, 150, 200],
     "id": "_id"
 }

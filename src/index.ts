@@ -111,7 +111,7 @@ async function fetchCurrentPage(cond?: any) {
 
     const r = await fetchJSON("/api/editor/", {
         cond: cond || {},
-        offset: page.from,
+        offset: page.from - 1,
         limit: page.batchSize
     });
 
